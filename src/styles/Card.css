@@ -1,0 +1,43 @@
+/* From Uiverse.io by SteveBloX */
+.card {
+  box-sizing: border-box;
+  width: 200px; /* Consider using % for responsiveness */
+  height: 254px; /* Consider using % for responsiveness */
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  display: flex; /* Changed to flexbox */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  cursor: pointer;
+  transition: transform 0.5s ease, border 0.5s ease; /* Specific transitions */
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+/* Additional styles for better readability */
+.card p {
+  margin: 0; /* Reset margin for paragraphs */
+  padding: 0.5em; /* Optional padding */
+}
+
+/* Optional: Media query for responsiveness */
+@media (max-width: 600px) {
+  .card {
+      width: 80%; /* Make cards responsive */
+      height: auto; /* Let height adjust */
+  }
+}

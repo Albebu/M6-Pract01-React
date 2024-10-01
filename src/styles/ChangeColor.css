@@ -1,0 +1,8 @@
+.ChangeColor {
+    display: flex;
+}
+
+.ChangeColor-bottom {
+    display: flex;
+    flex-direction: column;
+}

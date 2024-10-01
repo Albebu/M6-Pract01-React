@@ -1,0 +1,7 @@
+.changeSize-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vh;
+    height: 40vh;
+}
